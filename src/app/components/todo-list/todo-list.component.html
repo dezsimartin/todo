@@ -1,0 +1,6 @@
+<div *ngFor='let t of todos'>
+    <app-todo [todo]='t' (deleteClick)='handleDeleteClick($event)'></app-todo> 
+    <input type="checkbox" name="" value="" (change)='onCheckboxClick($event, t.id)'>
+</div>
+
+<button type="button" (click)='deleteTodos()'>Delete Checked</button>

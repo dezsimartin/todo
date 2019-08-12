@@ -1,0 +1,17 @@
+<form #editTodo='ngForm' (ngSubmit)='onAdd()'>
+
+<div>
+<label for='name'>Név</label>
+<input type="text" name="name" [(ngModel)]='todo.name'>
+</div>
+
+<div>
+<label for='description'>Description</label>
+<input type="text" name="description" [(ngModel)]='todo.description'>
+</div>
+
+<button type="submit">Add Todo</button>
+
+
+
+</form>
